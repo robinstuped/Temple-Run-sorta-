@@ -6,7 +6,7 @@ app = Ursina()
 
 
 # player = Entity(model='cube', color=color.orange, scale=(1,2,1), position=(0,1,500))
-player = FirstPersonController(model="cube", position=(0, 1, -80), speed=50, collider='box')
+player = FirstPersonController(model="cube", position=(0, 1, -80), speed=7, collider='box')
 camera.z = -5
 
 # z = 0
@@ -87,7 +87,7 @@ def update():
         reset_blocks()
         message.enabled = False
     if held_keys["f"]:
-        player.jump_height += 3
+        player.jump_height += 0.1
     
         
         
